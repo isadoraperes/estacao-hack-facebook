@@ -1,6 +1,6 @@
 # Estação Hack
 > Continue a codar 🐠
-### Curso de front-end fornecido pelo Facebook
+### Curso de full stack fornecido pelo Facebook
 
 Tópicos abordados:
    - Git
