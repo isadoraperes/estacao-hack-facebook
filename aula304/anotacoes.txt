@@ -1,0 +1,51 @@
+biblioteca - trechos de códigos para não reinventar a roda
+
+python é tipado, porém é uma tipagem dinâmica.
+prinricpais paradigmas: POO, funcional, procedural e imperativo.
+
+imperativo - sequencia de comando que funciona na ordem que foi digitado (lggm C)
+procedural - procedimentos/funções - há reutilizações de código (lggm C++)
+funcional - lógica matemática é usada para escrever o código, a partir do resultado de uma função é encadeado em outra função. não há variáveis. apenas mudanças de estados quando as funções são aninhadas(lggm Clojure)
+
+POO - a concepção de algum objeto é a abstração do objeto físico. a ideia que possuímos do obj em nosso imaginário é o que podemos dizer de classe em um código. e as caracteristicas desse obj físico são como os atributos de uma classe. quando criamos um obj físico no código, estamos instanciando essa classe e definindo os seus atributos.
+
+django - framework para python
+
+**python - revisão**
+
+boas práticas em python - documento chamado PEP
+https://pep8.org/ (existem vários)
+
+classes têm que ter o nome com a primeira letra maiúscula e seguido de parenteses ():
+
+__init__ -> construtor, instância a classe animal e o seu retorno é um objeto da classe animal.
+
+andar(self):
+
+o obj que está invocando o método é que será passado no parâmetro self -> então o python lê que ele é quem será utilizado nessa função.
+
+para ativar um ambiente virtual é necessário usar o comando (no Windows):
+source nome_do_ambiente/Scripts/activate
+
+
+**https://uoa-eresearch.github.io/eresearch-cookbook/recipe/2014/11/26/python-virtual-env/
+
+django.contrib.auth -> modulos de autenticação do django.
+
+
+para rodar o django localmente é preciso usar o comando:
+python manage.py runserver 
+
+no terminal e abrir o localhost
+
+matar servidor - ctrl + c
+
+e dai verificar se caiu o server
+
+depois startar o app 
+
+python manage.py startapp nome_do_app
+
+e subir servidor novamente
+
+(ler: https://pt.stackoverflow.com/questions/195128/qual-%c3%a9-a-diferen%c3%a7a-entre-projeto-project-e-aplica%c3%a7%c3%a3o-app-no-django)

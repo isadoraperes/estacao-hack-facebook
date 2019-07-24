@@ -1,0 +1,10 @@
+quando uma linguagem é de alto nível, como javascript, não é necessário saber como todos os processos exatamente são feitos. por exemplo, quando usamos let para definir uma variável e atirbuir um valor à ela.
+
+javascript para front-end. não é pq não é necessariamente visual que não é front-end.
+
+paradigma: orientado a eventos.
+cliques, hover... etc.
+
+linguagem de tipagem fraca. não é preciso se preocupar com o tipo de dado que vai usar na variavel porque não é necessário tipá-la. pois é possível mudá-la.
+
+colocar nome de variáveis de forma semântica, ou seja, um nome que tenha sentido de acordo com o contexto que a variável está inserida.

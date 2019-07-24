@@ -1,0 +1,19 @@
+rem - adaptação melhor à tela  (melhoria na responsividade)
+vh - vw || heigth e widh da viewport, maior controle e precisão da proporção dos elementos de acordo com a viewport
+vmin e vmax - geralmente usado para mobile
+
+*~ css grid ~*
+
+permite criar a estrutura do site com grid. (mesma ideia do bootstrap?)
+pode-se dividir o site em colunas(cloumns). e em linhas(rows). definindo o tamanho desejado para as colunas e as linhas.
+geralmente se utiliza 4 colunas.
+
+
+(    ler: 
+    * https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout 
+    * https://www.w3schools.com/css/css_grid.asp
+    * https://www.origamid.com/projetos/css-grid-layout-guia-completo/
+    * https://medium.com/collabcode/pare-de-chutar-e-aprenda-como-funciona-o-css-grid-layout-afaa7412d035
+    * https://seesparkbox.com/foundry/css_grid_layout_guide_with_flexbox_fallbacks
+)
+

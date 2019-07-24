@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script src="{% static 'js/script.js' %}" defer></script>
+    <title>Django e suas rotas</title>
+</head>
+<body>
+    <!-- para só imprimir uma variavel, se usa dois cjtos de chaves -->
+    <p>Esse é o perfil da {{ nome }}</p>
+    {% if nome == "cachorro" %}
+        <p>Essa é a página de dogs</p>
+    {% elif nome == "gato" %}
+        <p>Essa página é de gatos</p>
+    {% else %}
+        <p>Essa não é a página dos bichanos</p>
+    {% endif %}
+    <h1>Esses são os nossos doguineos</h1>
+    <ul>
+    {% for dog in cachorros %}
+        <li>{{dog}}</li>
+    {% endfor %}
+    </ul>
+    <h3>Esse é o Projeto02 de Django</h3>
+    {% comment %} 
+    conteúdo para amanhã:
+    {% block content %} ... {% endblock %}
+    {% include "menu.html" %}
+    {% extends "nav.html" %} 
+    exercício -> passar o jogo feito em um projeto django
+    {% endcomment %}
+    <h3>Está é a aplicação Meuapp do Projeto 02</h3>
+</body>
+</html>

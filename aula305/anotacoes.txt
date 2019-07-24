@@ -1,0 +1,38 @@
+não se deve subir o ambiente virtual porque a venv é configurada para o path da máquina que estamos usando. ou seja, caso alguém baixe a venv que criei pode dar erro. pq os caminhos das configs est�o de acordo com o path da minha máquina. por isso temos os requirements.txt, para que a pessoa que baixe o projeto possa baixar e instalar as configurações de acordo a necessidade.
+
+ao usar o comando: django admin startproject nome_do_projeto .
+é necessário ter o ponto final no fim do comando para que o django crie o projeto no diretório que estamos, evitando assim que ele crie uma outra pasta e nessa pasta que seja criado o projeto.
+
+(comando para criar uma aplicação em django)
+
+python manage.py startapp minhaapp
+
+diferença projeto django para aplicação django.
+
+projeto -> projeto02 (criado hj)
+app -> componente do meu sistema - pode ser um cadastro para newsletter (pag para email e ao confiramar estamso inserido no database para receber as notificações de novidades). ou ent�o pode ser a compra de ingressos (pgto). ou então pode ser o email que é enviado ao efetuar a compra de ingressos.
+
+módulo -> cjto de classes, ou métodos, ou atirbutos (siginifacado de módulos em python)
+
+cada aplicação tem suas paginas html diferentes (de acordo com as suas funcionalidades)
+
+o django dentro de cada app ele busca um dir. chamado templates. e um dir. chamado static.
+
+o django precisa monstar uma tabela no bd para grava o usuario, sua senha, etc. para poder adminstrar a aplicação django pelo seu admin.
+
+para cada modulo de django é necessário ter um bd.
+
+ao importar a views é necessário apontar para a função que vai inflar nossa página html. para isso usamos o ponto final .nome_da_funcao_para_pag
+
+arquitetura do django -> MTV (model, template, view)
+
+model é onde definimos as tabelas e os relacionamentos das tabelas (é o que fica em contato com o bd). define onde os dados serão armazenados e o que será feito com esses dados.
+
+a view é onde eu defino todas as regras de negócio do meu sistema. 
+
+fluxo: m -> v (no java é igual ao controler - modelo mvc) -> t
+
+template é um "pedaço" de html que não deve ser alterado de um usuário para outro, ou de requisição para requisição.
+{% %} -> porcentagem indica que vamos inserir um comando nesse espaço
+
+criamos uma pasta static (dentro do meuapp) e é onde fica a pasta css, js, e imgs.

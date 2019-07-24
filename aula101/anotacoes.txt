@@ -1,0 +1,53 @@
+<head> serve para colocar toda a area de configuração
+UTF-8 são os caracteres especiais para a lingua latina, ou seja, contém os caracteres e acentuações presentes em nosso alfabeto
+-- google classroom do curso: https://classroom.google.com/c/MzcyNjU1NjU5MzJa
+-- repositório do curso: https://github.com/academiaeh05-2019
+
+<title> essa tag não faz parte da pagina, ele corresponde ao nome da aba do chrome, por isso ela se encontra no <head>
+<h1> até o <h6> são tags para titulo e sua numeração é ordenada de acordo com sua prioridade no site; ou seja, não é indicado que haja mais de uma tag <h1> em um site
+<img alt=""> o alt é para acessibilidade, serve para a leitura de tela e também para quando a img não carrega o usuário tenha uma descrição do que ela seria
+alt é considerado uma propriedade da tag <img>
+
+nav, footer, section, article, aside, main são tags que em sua configurações funcionam como uma div. porém elas tem papel muito importante para a classificação semântica do código, a importância semântica é necessária para realizar manutenção em um código por humanos tanto quanto para a leitura automática do SO
+
+ideal é add o link da fonte antes do link do css.
+
+*~ comandos no git bash ~* 
+
+pwd - mostra em que lugar o terminal está aberto, qual o diretório emq ue ele esta naquele momento. seu retorno é o caminho do diretório em que nos encontramos
+ls - lista as coisas que estão dentro do diretório onde estamos. o que tiver / no final do nome é uma pasta no sistema.
+cd - comando para entrar em um diretório. change directory.
+mkdir - make directory. comando para a criação de uma pasta (novo diretorio)
+touch - criar novo arquivo
+code . - abre o visual studio code com o arquivo que criamos para podermos codar
+. significa que abrirá a pasta onde estamos atualmente
+cd .. - comando para retornar um diretório
+rm -rf - comando para deletar um arquivo. esse comando apaga definitivamente o arquivo. não é enviado para a lixeira. 
+start - inicia o arquivo no programa padrão definido para ele (ex.: index.html é aberto no google chrome)
+
+Git é uma ferramenta de versionamento. trabalhar com todo mundo usando o mesmo código sem que ele quebre ou dê problema usando uma versão que não é a mais atualizada. toda vez que o git for usado é necessário iniciar o repositório. ou seja, cada repositório é uma pasta do projeto específico. está tudo salvo na nuvem, o portfólio do dev.
+
+master - é o código principal, a branch principal
+  	 o famoso ambiente em produção (aquilo que está no ar)
+branch - são as ramificações (outros códigos clonados a partir da master)
+	 a cópia dos códigos principais, para realizar as alterações que julgamos necessárias
+branch de homnologação - ambiente de testes, reproduzindo o mesmo ambiente de produção para testar se o código possui alguma falha critica
+registro - são as informações sobre alterações que foram realizadas (como se fosse como uma linha do tempo de modificações no repositório - onde, por quem, o que)
+arquivos não rastreados - ele consegue visualizar os arquivos que existem, mas não consegue ter visualizar alterações no arquivo
+commit - criar registros atuais do código que estamos mexendo
+todas as alterações realizadas é necessário adicioná-las ao git novamente. 
+
+*~ comandos git ~*
+git init - inicializa o repositório (cria o arquivo .git)
+git config user.name "Meu Nome" - configura o nome do usuário que estará em acesso pelo github
+git config user.email "meuemail@gmail.com" - configura o email do usuário que está tentando fazer login
+git status - verifica como o projeto está no momento
+git add . - add todos os arquivos que estão presentes no diretório no momento
+git commit -m - commitando com uma msg sobre aquilo que iremos subir
+		esse arquivo serve para... "e aqui entra o conteúdo que será a msg" que por boa prática adota-se o inifitivo para a primeira palavra (ação)
+git log - log do que foi realizado 
+git difi - diferenças entre versões de arquivo/commit
+
+1) git init
+2) git config user.name "meu nome"
+3) git config user.email "meu email"

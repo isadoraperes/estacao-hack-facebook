@@ -1,0 +1,4 @@
+função é um bloco de código reutilizável - para facilitar e otimizar o processamento do programa, evitando reescrever o mesmo código quando desejamos que a mesma ação aconteça.
+também usamos para que eventos aconteçam dentro da página html. 
+toda função têm return, que é o responsável por retornar o resultado que a função realizou, para o bloco de código onde a função foi chamada.
+a primeira linha de criação, nome e params é chamada de assinatura da função.

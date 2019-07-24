@@ -1,0 +1,17 @@
+o local correto do script é no head  da página, pois ele é um metadado.
+DOM - document object model - modelo de objeto de documento.
+document é um objeto. chave: caracteristicas da paginas. valor: objetos, elementos, variaveis que farão modificações na página.
+parâmetros -> estão na assinatura da função (sua primeira linha)
+argumentos -> são variáveis que são passadas quando chamamos a função
+querySelector -> traz apenas 1 elemento, o primeiro que ele encontra na página.
+querySelectorAll -> cria uma lista vazia, acessa a página, todos os elementos que ele encontra, ele insere na lista e após percorrer toda a página, ele retorna a lista.
+todas as propriedades de um item que possuimos em um html, podemos recuperar e alterar usando o javascript e mexendo com o DOM
+além das propriedades é possível mexer no conteúdo de uma tag
+innerHTML = conteúdo, tudo que está entre o começo e o fechamento da tag
+todas as classes para o DOM são uma listatodos os valores do javascript possuem PRIORIDADE sobre os estilos que foram definidos no css
+.toogle() > função que se o elemento tem uma classe, ele exclui. e se o elemento não tem a classe, ele insere.
+
+javascript -> elemento > objeto > chave : valor 
+
+é possível atribuir funções aos eventos
+

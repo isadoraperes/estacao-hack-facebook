@@ -1,0 +1,45 @@
+body {
+    font-size: 14px;
+    display: grid;
+    grid-template-areas: 
+                        'nav nav nav nav'
+                        'header header header aside'
+                        'section section section aside'
+                        'footer footer footer footer';
+    /* os valores abaixo estão respectivamente ordenados conforme a propriedade acima */
+    grid-template-rows: 10vh 15vh 60vh 30vh;
+    grid-template-columns: 24vw 24vw 24vw 24.5vw;
+}
+
+.teste2 {
+    font-size: 1.2rem;
+}
+
+.teste3 {
+    font-size: 1.2rem;
+}
+
+nav {
+    grid-area: nav;
+    background-color: aqua;
+}
+
+header {
+    grid-area: header;
+    background-color: #cdc43f;
+}
+
+section {
+    grid-area: section;
+    background-color: palevioletred;
+}
+
+aside {
+    grid-area: aside;
+    background-color: #0051ff;
+}
+
+footer {
+    grid-area: footer;
+    background-color: grey;
+}

@@ -1,0 +1,11 @@
+o tamanho dos arquivos influenciam o ranking quando é realizada uma pesquisa orgânica pelo google.
+porque de acordo com a dificuldade/tempo para carregar uma informação no site, o google posiciona o site em uma baixa posição no relatório de pesquisas.
+por isso é importante que para o site é ideal ter somente 1 <h1>, porque é lido automaticamente como o título do site.
+
+elemento que é uma lista já tem como propriedade padrão display em bloco. 
+porém para criar uma barra de navegação que fique alinhada horizontalmente é necessário usar o display: flex;
+o justify-content: space-around é o espaçamento igualitário entre os itens. ou seja, utilizam a mesma quantidade do espaço em volta.
+se as duas propriedades anteriores forem usadas é obrigatório também utilizar o display: flex para que haja um funcionamento correto.
+
+nav = tag criada a partir do html5, que o navegador já entende que essa tag deve estar em cima da página
+

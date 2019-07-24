@@ -1,0 +1,33 @@
+opensource - pessoas participando ativamente e contribuirem. python é uma lggm que é muito comum haver projetos opensource.
+
+experiência em entender códigos de outras pessoas. 
+
+em python não é usada camel case. geralmente se usa o _ para separar o nome da variavel.
+
+toda vez que existe parenteses no final de uma palavra, é um indicativo que ela é uma função.
+
+~* lista [] *~
+print() - console.log() / system.out.print()
+type() - typeOf() / instanceof
+input() - prompt() / scanner()
+append() - push() / add()
+index() - indexOf() /indexOf()
+count() - mostra quantos itens existem em uma lista
+len() - conta a qtd de itens que possuem na lista (tamanho da lista) / / size()
+pop() - remove o ultimo indice da lista ou pode-se colocar o indice desejado
+remove() - remove o elemento da lista
+extend() - extende uma lista com outra lista
+
+
+dir(nome_variavel) - retorna lista com todas as funções imersas à classe da variavel e que podem ser aplicadas na variavel.
+
+is / compara o type de uma variavel.
+not / compara se NÃO é igual. similar ao != em outras linguagens.
+
+~* tupla () *~
+estrutura de dados semelhante a lista porém não sofre mudanças
+index() - retorna o indice do elemento
+
+~* dicionário {} *~
+composto por chave e valor
+chave identifica e o valor autoriza

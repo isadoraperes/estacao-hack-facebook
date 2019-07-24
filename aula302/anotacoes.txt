@@ -1,0 +1,44 @@
+adicionar um elemento em um indice na lista = append()
+bibliotecas python serão mais utilizadas a partir deste momento para que possamos reutilizar os códigos e termos maior facilidade ao desenvolver uma aplicação.
+API - consumir outros serviços em outra aplicação.
+https://pypi.org
+
+#fazer lista randomica com 20 valores e mostrar em tela
+#criar função que retorne o maior numero da lista
+
+(pesquisar como incluir contribuidor no repositporio do github - para sexta já ter isso resolvido)
+
+para criar um ambiente (no git bash):
+python (linguagem e sua versão) -m (make) venv (pacote de instalação do ambiente - virtual enviroment) env (nome do ambiente, que na vdd pode ser qualquer coisa, tipo churros)
+
+#transfere os itens listados pelo freeze para dentro do arquivo requirements.
+pip freeze > requirements.txt
+
+#instala tudo que tem que no arquivo requirements no ambiente que criamos.
+pip install -r (recursividade - importante para que as bibliotecas saibam a ordem correta para instalarem) requirements.txt
+
+*** redes
+
+redes é internet.
+
+todos os status que o servidor pode informar à nossa página:
+https://http.cat/
+
+métodos que nossas api's podem realizar e podemos fazer a partir de api's:
+GET - lê a informação
+POST - envia a informação
+PUT - atualiza a informação
+DELETE - deleta a informação da base
+
+**CRUD**
+create - criar
+read - exibir
+update - atualizar
+delete - deletar
+
+(finalizar em casa
+https://help.github.com/en/articles/about-teams
+https://help.github.com/en/articles/limiting-interactions-in-your-repository
+https://help.github.com/en/articles/permission-levels-for-a-user-account-repository#collaborator-access-on-a-repository-owned-by-a-user-account
+https://help.github.com/en/articles/organizing-members-into-teams
+https://pt.wikiversity.org/wiki/Privil%C3%A9gios_e_Permiss%C3%A3o_de_Usu%C3%A1rios_e_Grupos_-_GitLab_x_GitHub)

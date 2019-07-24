@@ -1,0 +1,111 @@
+/* 
+font-family: 'DM Serif Text', serif;
+font-family: 'Lato', sans-serif; 
+*/
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: #eff3f4;
+}
+
+nav {
+    background-color: #ffa600d2;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 15pt;
+    font-family: 'DM Serif Text', serif;
+    text-transform: lowercase;
+}
+
+h1, h3 {
+    font-family: 'DM Serif Text', serif;
+    text-align: left;
+}
+
+h1 {
+    font-size: 30pt;
+    padding: 40px;
+}
+
+h3 {
+    font-size: 22pt; 
+    margin-bottom: 15px;
+}
+
+h4 {
+    font-family: 'Lato', sans-serif;
+    padding: 40px;
+    text-align: left;
+    font-size: 20pt;
+}
+
+.banner {
+    height: 400px;
+    background-image: url("images/bg2.jpg");
+    background-size: cover;
+    background-position: center;
+    padding-top: 30px;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+}
+
+.form div {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.form input {
+    margin-bottom: 5px;
+    padding: 7px;
+}
+
+#btnEnviar {
+    /* background-color: #fd8050; */
+    background-color: #fda830;
+    justify-items: center;
+    border: none;
+    border-radius: 5px;
+    font-size: 100%;
+    font-family: 'DM Serif Text', serif;
+    text-transform: lowercase;
+    text-align: center;
+    font-weight: bold;
+    padding: 7px;
+}
+
+#btnEnviar:hover {
+    background-color: #fd8050;
+}
+
+footer {
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    background-color: #fda830;
+}
+
+#icons img {
+    width: 40px;
+    padding: 8px;
+    justify-content: space-between;
+}
+
+footer p {
+    margin-bottom: 0px;
+    padding-bottom: 25px;
+    font-size: 10pt;
+}

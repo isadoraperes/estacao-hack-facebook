@@ -1,0 +1,8 @@
+@media - media query, definimos um valor minimo para quando o site for carregado por um dispositivo que tiver essa viewport minima. também é possível definir o tipo de orientação: retrato ou paisagem (portrait ou landscape).
+recomenda-se que o acesso pelo celular seja mais simplificado, ou seja, sem muita diversificação de cores e texturas. para manter a compatibilidade e a usabilidade sempre em primeiro plano.
+~* and *~ combinar duas situações para que aquele resultado seja verdadeiro. tamanho deifnido e orientação TEM que ser vdd para o @media query ser aplicado.
+~* not *~ como se inserisse uma clausula de exceção. tela de tamanho até 600px ok, menor que 400px as definições do @media query não é aplicado.
+
+site do adobe para pesquisar paletas de cores: https://color.adobe.com/pt/explore
+
+flex bases - equilibrar o espaçamento entre os itens dentro do box. porém ao usar o grid, nem sempre é possível usá-lo.

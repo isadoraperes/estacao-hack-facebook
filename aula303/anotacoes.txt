@@ -1,0 +1,24 @@
+*args -> não é preciso definir explicitamente uma quantidade de itens ou parametros que utilizaremos na nossa função
+
+dicionario -> chave : valor (lembrar da lista telefônica)
+
+**kwargs -> dicionário, vai aceitar somente argumentos do tipo chave:valor
+
+is not -> === -> compara valor e tipo
+!= -> == -> compara somente o valor
+
+.get acessa somente a chave
+.value acessa os itens
+
+cjto de caracteristicas - conforme essas caracteristicas aumentam = maior abstração
+
+##Pet 
+nome
+raça
+data_nascimento
+peso 
+porte 
+sexo 
+especie
+
+_ na frente de uma palavra torna ela privada.
