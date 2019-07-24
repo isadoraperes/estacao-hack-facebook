@@ -1,0 +1,6 @@
+o que é um dado: uma coisa sem sentindo
+informação: é um dado estruturado
+
+banco não relacional: para estruturas que não tem necessidades de serem relacionadas constantemente
+https://sqliteonline.com/ -- para treinar sqlite
+
