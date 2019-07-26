@@ -1,0 +1,29 @@
+{% extends 'shared/layout.html' %}
+
+{% block conteudo %}
+
+<h1>Ideias</h1>
+<h3>Conheça as ideias já cadastradas:</h3>
+<p>
+    {% for ideia in ideias %}
+        <p>{{ideia.pessoa.nome}}</p>
+        <p>{{ideia.titulo}}</p>
+        <p>{{ideia.categoria}}</p>
+        <p>{{ideia.descricao}}</p>
+    {% endfor %}
+</p>
+
+<!-- 
+{% include 'shared/lista_shared.html' %}
+
+<h2>Pessoas Cadastradas</h2>
+<ul>
+    {% for pessoa in pessoas %}
+        <li>
+            {{pessoa.nome}} {{pessoa.sobrenome}}
+        </li>
+    {% endfor %}
+</ul> -->
+
+
+{% endblock %}

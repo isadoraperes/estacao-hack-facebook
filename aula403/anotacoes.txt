@@ -1,0 +1,91 @@
+﻿################################## aula 402 ##################################
+
+é necessário e muito importante definir o identificador (id) para sua tabela no banco de dados
+o django já gera automaticamente um id de acordo com as classes
+um registro tem apenas um id.
+
+CharField é um campo de texto no django
+para saber o tipo de um dado no django é necessário sempre ter em mãos a documentação
+como o link a seguir: https://docs.djangoproject.com/en/2.2/ref/models/fields/
+
+isso é necessário para definir os atributos do campo no banco de dados 
+ou seja, criar um campo na tabela de nome com quantidade total de caracteres igual a 255, por exemplo
+variáveis de escolha no django, por boa prática, são criadas com letras maiúsculas
+tudo que é possivel prever podemos colocar como choices (igual a classe enum no java)
+
+null e blank são atributos que podem ir em qualquer campo
+quando é null=True, não é obrigatório preencher esse campo
+quando é blank=True, pode estar em branco (nada preenchido)
+
+por padrão os dois campos são False. ou seja, não pode ficar sem preencher e em branco.
+
+é ideal que após criar o models rode o servidor para verificar se o código ta ok. estando ok têm que dar o comando:
+python manage.py makemigrations
+
+e na pasta migrations é possível ver o 0001_initial.py que mostra o históricos de migrations que já fizemos. onde o django também já cria o id (chave primária da tabela) automaticamente para nós.
+
+tudo ok, então damos o comando que cria o banco:
+python manage.py migrate
+
+esse comando acima usa o histórico de migrações para criar as tabelas no banco. recomenda-se que não exclua os históricos gerados pelo makemigrations.
+
+o arquivo db.sqlite3 é o nosso banco de dados. então NÃO podemos apagá-lo.
+mas, caso aconteça, o ideal que se rode o comenado makemigrations e migrate, respectivamente, de novo.
+
+#obs# ao executar o comando 'deactivate' nós desativamos o ambiente virtual
+
+para acessar o admin do django é preciso criar um super usuário e super senha.
+para que possamos ter acesso ao admin e ter domínio da aplicação inteira.
+para isso nós usamos o comando:
+winpty python manage.py createsuperuser
+
+então o python pede que a gente defina um nome de usuário, email e senha.
+
+e para que possamos mexer na classe que criamos e visualizar sua tabela e campos
+precisamos em nosso aplicativo acessar o arquivo admin.py 
+importar os models 
+e add a classe que desejamos dessa forma: admin.site.register(models.NomeDaSuaClasse)
+
+## exercicio ##
+- add uma pessoa em Pessoas no admin
+- criar um form em html no index.html da views.py (na aplicação)
+
+toda vez que criamos um formulário é necessário adicionar um {% csrf_token %} para que tenhamos maior segurança
+porque ele trabalha com um token no envio de uma requisição do formulário à aplicação
+
+para recuperar o dados enviados pelo formulário é necessário add no atributo 'action' do form a url do caminho para chamar a página (no nosso exemplo é a index.html) 
+essa página que contém a função que recebe o request como paramentro. e cria um retorno para o request.method do formulário. geralmente é na função que infla a index no views.py
+
+o que o usuário vê é o template.
+
+a estrutura do django para os resultados de pesquisa do banco de dados é o QuerySet
+e ele devolve uma lista de objetos como resultado, por isso que usamos o 'objects' após o nome da tabela que nos interessa fazer a pesquisa
+
+Pessoa.objects.all() -> select * from tb_pessoa 
+Pessoa.objects.filter(nome='Elaine').first() -> select nome like '%elaine%' from tb_pessoa
+Pessoa.objects.get(pk=2) -> select * from tb_pessoa where pk=2
+
+##filter já vem com tratamento de exceção, o get quando não encontra o resultado retorna um erro.
+
+toda vez que estamos retornando um dado não é necessário usar as porcentagens, mas sim usar um par de chaves dentro do outro {{}}
+
+################################## aula 403 ##################################
+
+ao visualizar um erro uma boa dica é olhar a última linha no prompt do gitbash. geralmente ele aponta em que documento e em qual linha está o erro. 
+caso não apareça o erro no prompt, mate o servidor com ctrl + c, e veja a última linha. porque o erro com certeza vai estar lá. isso não significa que seja o único erro que esteja impedindo sua aplicação de estar funcionando corretamente. mas sim que será o primeiro erro que o django irá encontrar que o impossibilita de subir sua app.
+
+por padrão a primeira letra de uma classe é em maiusculo. e criamos a classes + lógica de persistência de dados no banco no documento models.py da nossa aplicação.
+
+ManyToMany -> anotação @ManyToMany em Hibernate no java.
+ou seja, são tabelas associativas. é possivel que varios dados1 de uma tabela1 se relacione com varios dados2 da tabela2. e vice-versa.
+para entender melhor as relações das tabelas: https://www.devmedia.com.br/manytomany-hibernate-variacoes-unidirecional-e-bidirecional/29535
+
+para chamar o layout que criamos de criar é necessário usar o extends.
+
+a renderização das páginas é realizada na views.py dentro da pasta de aplicação.
+
+redirect encaminha para outra pag.
+
+## exercicio ##
+
+descobrir pq o sistema não está gravando categorias no bd

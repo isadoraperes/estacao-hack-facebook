@@ -1,0 +1,32 @@
+{% extends 'shared/layout.html' %}
+
+{% block conteudo %}
+
+<h1>Ideias malucas</h1>
+<h2>Cadastre a sua ideia!</h2>
+{{msg}}
+<form action="/" method="POST">
+    {% csrf_token %}
+    <label for="">Nome:</label>
+    <input type="text" name="nome" id="" required>
+    <!-- o atributo 'name' do input tem que ser igual ao que está na models.py -->
+
+    <label for="">Sobrenome:</label>
+    <input type="text" name="sobrenome" required>
+
+    <label for="">E-mail:</label>
+    <input type="text" name="email" id="" required>
+
+    <label for="">Sexo</label>
+    <select name="sexo" id="">
+        <option value="M">Masculino</option>
+        <option value="F">Feminino</option>
+    </select>
+
+    <label for="">Biografia</label>
+    <textarea name="biografia" id="" cols="30" rows="10"></textarea>
+
+    <input type="submit" value="Cadastrar Pessoa">
+</form>
+
+{% endblock %}
