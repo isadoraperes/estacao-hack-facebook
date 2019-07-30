@@ -1,32 +1,45 @@
 {% extends 'shared/layout.html' %}
 
 {% block conteudo %}
-
-<h1>Ideias malucas</h1>
-<h2>Cadastre a sua ideia!</h2>
+<section class="top">
+    <h1>Bem vindo ao Repositório de Ideias!</h1>
+    <h3>Cadastre-se e adicione a sua primeira ideia  :)</h3>
+</section>
 {{msg}}
-<form action="/" method="POST">
-    {% csrf_token %}
-    <label for="">Nome:</label>
-    <input type="text" name="nome" id="" required>
-    <!-- o atributo 'name' do input tem que ser igual ao que está na models.py -->
-
-    <label for="">Sobrenome:</label>
-    <input type="text" name="sobrenome" required>
-
-    <label for="">E-mail:</label>
-    <input type="text" name="email" id="" required>
-
-    <label for="">Sexo</label>
-    <select name="sexo" id="">
-        <option value="M">Masculino</option>
-        <option value="F">Feminino</option>
-    </select>
-
-    <label for="">Biografia</label>
-    <textarea name="biografia" id="" cols="30" rows="10"></textarea>
-
-    <input type="submit" value="Cadastrar">
-</form>
+<div class="middle">
+    <form class="form" action="/" method="POST">
+        {% csrf_token %}
+        <div>
+            <p>Nome</p>
+            <input type="text" name="nome" id="" placeholder="Digite o seu nome" required>
+            <!-- o atributo 'name' do input tem que ser igual ao que está na models.py -->
+        </div>
+        <div>
+            <p>Sobrenome</p>
+            <input type="text" name="sobrenome" placeholder="Digite o seu sobrenome" required>
+        </div>
+        <div>
+            <p>E-mail</p>
+            <input type="text" name="email" id="" placeholder="Digite o seu e-mail" required>
+        </div>
+        <div class="selection">
+            <p>Sexo</p>
+            <select name="sexo" id="">
+                <option value="M">Masculino</option>
+                <option value="F">Feminino</option>
+            </select>
+        </div>
+        <div>
+            <p>Biografia</p>
+            <textarea name="biografia" id="" cols="30" rows="10" placeholder="Escreva a sua biografia aqui!"></textarea>
+        </div>
+        <div>
+            <input class="btnIndex" type="submit" value="Cadastrar">
+        </div>
+    </form>
+    <div class="img">
+        <img src="../static/imgs/ideias.jpg" alt="">
+    </div>
+</div>
 
 {% endblock %}
