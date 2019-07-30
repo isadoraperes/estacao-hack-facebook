@@ -36,11 +36,11 @@ def login(request):
     #com a msg 'cadastre-se para criar uma ideia'
     if request.method == 'POST':
         email = request.POST.get('email')
-        pessoa_bd = Pessoa.objects.filter(email=email_form).first()
+        pessoa = Pessoa.objects.filter(email=email).first()
 
-        print('Olá, ', pessoa.nome, ' !')
+        print('Olá, ', pessoa, ' !')
 
-        if pessoa_bd is None:
+        if pessoa is None:
             #retornar para pag. cadastro
             context = {'msg': 'Cadastra-se para criar uma ideia'}
             return render(request, 'index.html', context)
@@ -74,7 +74,7 @@ def cadastrar_ideia(request):
 
 def apagar_ideia(request, id):
     #pagar ideia
-    ideia = Ideia.objects.filter(id=id)
+    ideia = Ideia.objects.filter(id=id).first()
     
     print('Ok')
 
